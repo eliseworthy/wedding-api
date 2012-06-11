@@ -14,6 +14,10 @@ module ChattinApi
       def create(attributes)
         connection.post "/presentations", attributes
       end
+
+      def create_invite(attributes)
+        connection.post "/presentationinvites", attributes
+      end
     end
   end
 end
