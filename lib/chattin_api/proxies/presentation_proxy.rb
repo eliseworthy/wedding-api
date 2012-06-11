@@ -14,9 +14,11 @@ module ChattinApi
       def create(attributes)
         connection.post "/presentations", attributes
       end
+    end
 
-      def create_invite(attributes)
-        connection.post "/presentationinvites", attributes
+    class InviteProxy < AbstractProxy
+      def create(attributes)
+        connection.post "/invites", attributes
       end
     end
   end
