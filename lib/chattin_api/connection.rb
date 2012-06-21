@@ -3,14 +3,14 @@ require 'wedding_api/result'
 
 module WeddingApi
   class Connection
-    # DEFAULTS = {:port => 80}
+     DEFAULTS = {:port => 80}
 
     attr_reader :connection
     private :connection
 
     def initialize(options = {})
       options = DEFAULTS.merge(options)
-      url = "#{options.fetch(:host)}:#{options.fetch(:port)}"
+      url = "http://wedding-api.herokuapp.com"
       @connection = Faraday.new(:url => url)
     end
 
