@@ -1,9 +1,9 @@
 # encoding: utf-8
 $:.unshift File.expand_path("../lib", __FILE__)
 
-require 'chattin_api/version'
+require 'wedding_api/version'
 
-VERSION = ChattinApi::VERSION
+VERSION = WeddingApi::VERSION
 
 # build, install, release
 Bundler::GemHelper.install_tasks

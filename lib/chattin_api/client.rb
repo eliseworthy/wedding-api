@@ -1,4 +1,4 @@
-module ChattinApi
+module WeddingApi
   class Client
     attr_reader :connection
     private :connection
@@ -8,19 +8,11 @@ module ChattinApi
     end
 
     def comments
-      Proxies::CommentProxy.new(connection)
+      Proxies::WeddingProxy.new(connection)
     end
     
     def presentations
-      Proxies::PresentationProxy.new(connection)
-    end
-
-    def invites
-      Proxies::InviteProxy.new(connection)
-    end
-    
-    def users
-      Proxies::UserProxy.new(connection)
+      Proxies::ItemProxy.new(connection)
     end
   end
 end

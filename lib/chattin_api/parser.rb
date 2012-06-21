@@ -1,7 +1,7 @@
 require 'hashie'
 require 'json'
 
-module ChattinApi
+module WeddingApi
   module Parser
     def self.parse(json_text)
       return nil if json_text.strip.empty?

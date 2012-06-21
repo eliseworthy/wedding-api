@@ -1,0 +1,6 @@
+require 'wedding_api/version'
+require 'wedding_api/parser'
+require 'wedding_api/connection'
+require 'wedding_api/client'
+require 'wedding_api/proxies'
+require 'wedding_api/result'

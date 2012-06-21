@@ -1,10 +1,9 @@
 require 'faraday'
+require 'wedding_api/result'
 
-require 'chattin_api/result'
-
-module ChattinApi
+module WeddingApi
   class Connection
-    DEFAULTS = {:port => 80}
+    # DEFAULTS = {:port => 80}
 
     attr_reader :connection
     private :connection

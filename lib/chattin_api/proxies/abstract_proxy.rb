@@ -1,4 +1,4 @@
-module ChattinApi
+module WeddingApi
   module Proxies
     class AbstractProxy
       attr_reader :connection
