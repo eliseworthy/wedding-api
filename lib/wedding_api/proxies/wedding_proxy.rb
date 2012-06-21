@@ -1,4 +1,4 @@
-require 'chattin_api/proxies/abstract_proxy'
+require 'wedding_api/proxies/abstract_proxy'
 
 module WeddingApi
   module Proxies
