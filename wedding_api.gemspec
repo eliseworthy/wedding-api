@@ -1,4 +1,4 @@
-require File.expand_path('../lib/chattin_api/version', __FILE__)
+require File.expand_path('../lib/wedding_api/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.add_dependency 'faraday'
