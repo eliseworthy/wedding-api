@@ -7,11 +7,11 @@ module WeddingApi
       @connection = connection
     end
 
-    def comments
+    def weddings
       Proxies::WeddingProxy.new(connection)
     end
     
-    def presentations
+    def items
       Proxies::ItemProxy.new(connection)
     end
   end
